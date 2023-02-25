@@ -1,0 +1,21 @@
+{
+  "contact": [
+    {
+      "name": "Devang Bramhakshatriya",
+      "phone_no": "9168071225",
+      "email": "devangbramhakshtriya@gmail.com",
+      "subject": "fefe",
+      "message": "efefef",
+      "id": 1
+    }
+  ],
+  "courses": [
+    {
+      "name": "Devang Bramhakshatriya",
+      "phone_no": "9168071225",
+      "course": "Android App Development",
+      "email": "devangbramhakshtriya@gmail.com",
+      "id": 1
+    }
+  ]
+}
