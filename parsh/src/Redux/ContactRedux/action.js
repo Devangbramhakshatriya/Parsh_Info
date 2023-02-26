@@ -22,7 +22,7 @@ export const delete_contact=()=>{
 
 export const getContact=()=>(dispatch)=>{
     dispatch(get_contact_request());
-    axios.get("http://localhost:8080/contact").then((res)=>{
+    axios.get("https://parsh-info.onrender.com/contact").then((res)=>{
         dispatch(get_contact_success(res.data));
         
     }).catch(()=>{
@@ -31,7 +31,7 @@ export const getContact=()=>(dispatch)=>{
 }
 export const postContact=(contacts)=>(dispatch)=>{
     dispatch(get_contact_request());
-    axios.post("http://localhost:8080/contact",contacts).then((res)=>{
+    axios.post("https://parsh-info.onrender.com/contact",contacts).then((res)=>{
         dispatch(get_contact_success(res.data));
         
     }).catch(()=>{
@@ -41,10 +41,5 @@ export const postContact=(contacts)=>(dispatch)=>{
 
 export const deleteContact=(id)=>(dispatch)=>{
     dispatch(get_contact_request());
-    axios.delete(`http://localhost:8080/contact/${id}`).then((res)=>{
-        dispatch(get_contact_success(res.data));
-        
-    }).catch(()=>{
-        dispatch(get_contact_failure());
-    })
+    return axios.delete(`https://parsh-info.onrender.com/contact/${id}`)
 }

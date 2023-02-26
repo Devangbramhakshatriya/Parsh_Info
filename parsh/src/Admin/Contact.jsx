@@ -15,8 +15,7 @@ function Contact() {
     }, [])
 
     const handleDelete = (id) => {
-        dispatch(deleteContact(id))
-        dispatch(getContact())
+        dispatch(deleteContact(id)).then(()=>dispatch(getContact()))
     }
     console.log(contacts)
     return (

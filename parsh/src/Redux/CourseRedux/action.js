@@ -23,7 +23,7 @@ export const delete_course=()=>{
 
 export const getCourse=()=>(dispatch)=>{
     dispatch(get_course_request());
-    axios.get("http://localhost:8080/courses").then((res)=>{
+    axios.get("https://parsh-info.onrender.com/courses").then((res)=>{
         dispatch(get_course_success(res.data));
         
     }).catch(()=>{
@@ -33,7 +33,7 @@ export const getCourse=()=>(dispatch)=>{
 
 export const postCourse=(courses)=>(dispatch)=>{
     dispatch(get_course_request());
-    axios.post("http://localhost:8080/courses",courses).then((res)=>{
+    axios.post("https://parsh-info.onrender.com/courses",courses).then((res)=>{
         dispatch(get_course_success(res.data));
         
     }).catch(()=>{
@@ -43,10 +43,5 @@ export const postCourse=(courses)=>(dispatch)=>{
 
 export const deleteCourse=(id)=>(dispatch)=>{
     dispatch(get_course_request());
-    axios.delete(`http://localhost:8080/courses/${id}`).then((res)=>{
-        dispatch(get_course_success(res.data));
-        
-    }).catch(()=>{
-        dispatch(get_course_failure());
-    })
+    return axios.delete(`https://parsh-info.onrender.com/courses/${id}`)
 }

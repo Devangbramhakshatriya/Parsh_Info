@@ -14,8 +14,8 @@ function Courses(){
     },[])
 
     const handleDelete = (id) => {
-        dispatch(deleteCourse(id))
-        dispatch(getCourse())
+        dispatch(deleteCourse(id)).then(()=>dispatch(getCourse()))
+        
     }
     console.log(courses)
     return(
