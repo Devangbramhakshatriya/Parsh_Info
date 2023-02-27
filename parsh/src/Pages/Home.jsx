@@ -36,7 +36,7 @@ function Home() {
                     </Box>
                 </Box>
                 <Box m="auto" w="45%" p="1%" >
-                    <Image src="http://paarshinfotech.com/assets/img/home-one/cost1.jpg" borderRadius="6%" m="auto" />
+                    <Image src="/home_pic.PNG" borderRadius="6%" m="auto" />
 
                 </Box>
 
