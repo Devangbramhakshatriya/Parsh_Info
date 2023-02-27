@@ -12,6 +12,7 @@ import {
     Text,
     useColorModeValue,
     Select,
+    useToast,
   } from '@chakra-ui/react';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
@@ -26,6 +27,7 @@ import { postCourse } from '../Redux/CourseRedux/action';
   }
   export default function ApplyForm({coursetype}) {
     initialState.course=coursetype
+    const toast=useToast()
     const dispatch=useDispatch()
     const [course, setCourse] = useState(initialState)
     const handleChange=(e)=>{
@@ -38,10 +40,18 @@ import { postCourse } from '../Redux/CourseRedux/action';
     const handleSubmit=(e)=>{
         e.preventDefault()
         dispatch(postCourse(course))
-        alert("Apply Successfuly")
+        toast({
+          title: `Successful.`,
+          description: `Applied for ${coursetype}.`,
+          status: 'success',
+          duration: 9000,
+          isClosable: true,
+          position:"top"
+        })
+      
         setCourse(initialState)
     }
-    console.log(course)
+    
     return (
       <Flex
         minH={'100vh'}

@@ -13,6 +13,7 @@ import {
     Text,
     useColorModeValue,
     Link,
+    useToast,
 } from '@chakra-ui/react';
 import { useState } from 'react';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
@@ -27,6 +28,7 @@ const initialState = {
     message: ""
 }
 export default function ContactForm() {
+    const toast=useToast()
     const dispatch=useDispatch()
     const [contact, setContact] = useState(initialState)
     const handleChange=(e)=>{
@@ -39,10 +41,18 @@ export default function ContactForm() {
     const handleSubmit=(e)=>{
         e.preventDefault()
         dispatch(postContact(contact))
-        alert("Message Sent Successfuly")
+        toast({
+            title: `Successful.`,
+            description: `We will Connect You Soon.`,
+            status: 'success',
+            duration: 9000,
+            isClosable: true,
+            position:"top"
+          })
+        
         setContact(initialState)
     }
-    console.log(contact)
+    
     return (
         <Flex
             minH={'100vh'}

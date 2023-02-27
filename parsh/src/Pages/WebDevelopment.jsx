@@ -15,7 +15,7 @@ function Webdevelopemnt(){
     return(
         <Box>
             <Box>
-                <Image src="http://paarshinfotech.com/assets/img/web-development.jpg"/>
+                <Image src="/web-development.jpg" alt="web"/>
             </Box>
             <Box w="90%" m="auto" display={["","","","flex","flex","flex"]} mt={["25px","35px","40px","50px","60px","60px"]}>
                 <Box textAlign="start" fontFamily="sans-serif" fontSize={["11px","12px","13px","14px","15px","15px"]} w={["","","","50%","50%","50%"]}>
@@ -25,7 +25,7 @@ function Webdevelopemnt(){
                     <Text mt={["5px","6px","8px","8px","20px","10px"]}>Web Development is a powerful, open-source platform that consists of the Windows operating system.</Text>
                 </Box>
                 <Box m="auto" w={["","","","50%","50%","50%"]}>
-                    <Image src="http://paarshinfotech.com/assets/img/web-development-1.jpg" borderRadius="5%"/>
+                    <Image src="/web_pic.PNG" borderRadius="5%"/>
                 </Box>
             </Box>
             <ApplyForm coursetype={"Web Development"}/>

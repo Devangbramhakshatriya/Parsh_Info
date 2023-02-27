@@ -17,7 +17,7 @@ function Courses(){
         dispatch(deleteCourse(id)).then(()=>dispatch(getCourse()))
         
     }
-    console.log(courses)
+    
     return(
         <Box>
             {

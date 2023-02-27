@@ -24,8 +24,8 @@ function Footer() {
                         <Box   display={["", "flex", "flex", "flex", "flex", "flex"]} gap="20px"  textAlig="start" w={["100%","50%"]}  m="auto" >
                             <Box  mt="20px" w={["100%","50%"]}  m="auto">
                                 <Box display="flex" >
-                                    <Image w={["10%","10%","10%","10%","20%","50%"]} src="http://paarshinfotech.com/assets/img/logo4.png" />
-                                    <Image w={["50%","60%","60%","80%","100%","100%"]} src="http://paarshinfotech.com/assets/img/sppipvt.jpg" />
+                                    <Image w={["10%","10%","10%","10%","20%","50%"]} src="/parsh_symbol1.PNG" />
+                                    <Image w={["50%","60%","60%","80%","100%","100%"]} src="/parsh_symbol2.PNG" />
                                 </Box>
                                 <Text>Paarsh Infotech Pvt Ltd provides more than website design and Software development..</Text>
                                 <Box display="flex">

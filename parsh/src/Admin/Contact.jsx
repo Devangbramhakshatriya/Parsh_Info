@@ -8,7 +8,7 @@ function Contact() {
         return store.contactReducer
     }
     )
-    console.log(isLoading)
+    
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(getContact())
@@ -17,17 +17,17 @@ function Contact() {
     const handleDelete = (id) => {
         dispatch(deleteContact(id)).then(()=>dispatch(getContact()))
     }
-    console.log(contacts)
+    
     return (
         <Box>
             {
                 isLoading ? <Image m="auto" src="https://i.gifer.com/origin/d3/d3f472b06590a25cb4372ff289d81711_w200.gif"/>
 
                     :
-                    
+                    <Box w="100%" overflow="auto">
                     <Table>
                         <Thead>
-                            <Tr>
+                            <Tr gridColumn="auto">
                                 <Th>Sr. No</Th>
                                 <Th>Name</Th>
                                 <Th>Email</Th>
@@ -36,7 +36,7 @@ function Contact() {
                                 <Th>Message</Th>
                             </Tr>
                         </Thead>
-                        <Tbody>
+                        <Tbody >
                             {
                                 contacts.length>0 && contacts.map((e, i) => (
                                     <Tr>
@@ -52,7 +52,7 @@ function Contact() {
                             }
                         </Tbody>
                     </Table>
-
+                    </Box>
             }
 
         </Box>

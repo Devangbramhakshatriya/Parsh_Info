@@ -15,7 +15,7 @@ function Graphic(){
     return(
         <Box>
             <Box>
-                <Image src="http://paarshinfotech.com/assets/img/graphic-design.jpg"/>
+                <Image src="/graphics.jpg"/>
             </Box>
             <Box w="90%" m="auto" display={["","","","flex","flex","flex"]} mt={["25px","35px","40px","50px","60px","60px"]}>
                 <Box textAlign="start" fontFamily="sans-serif" fontSize={["11px","12px","13px","14px","15px","15px"]} w={["","","","50%","50%","50%"]}>
@@ -25,7 +25,7 @@ function Graphic(){
                     <Text mt={["5px","6px","8px","8px","20px","10px"]}>It is a way to learn and remember to speed up your design process. Bring your ideas to life and stay motivated through daily emails and lessons.</Text>
                 </Box>
                 <Box m="auto" w={["","","","50%","50%","50%"]}>
-                    <Image src="http://paarshinfotech.com/assets/img/graphic-design-1.jpg" borderRadius="5%"/>
+                    <Image src="/graphics_pic.PNG" borderRadius="5%"/>
                 </Box>
             </Box>
             <ApplyForm coursetype={"Graphic Design"}/>

@@ -14,7 +14,7 @@ function Contact(){
     return(
         <Box>
             <Box>
-                <Image src="http://paarshinfotech.com/assets/img/about6.jpg"/>
+                <Image src="/contact.jpg"/>
             </Box>
             <Box w="90%" m="auto" display={["","","","flex","flex","flex"]} mt={["25px","35px","40px","50px","60px","60px"]} textAlign="start">
                 <Box w={["","","","50%","50%","50%"]}  fontFamily="sans-serif" fontSize={["12px","14px","15px","15px","17px","17px"]}>
@@ -31,7 +31,7 @@ function Contact(){
                 </Box>
                 <Box w={["","","","50%","50%","50%"]} m="auto"><ContactForm/></Box>
             </Box>
-            <Box  >
+            <Box>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.6424794042196!2d73.78184023634839!3d19.981532299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddebee73f7beb3%3A0x180f540ccce09ace!2sPAARSH%20INFOTECH%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1677344680269!5m2!1sen!2sin" width="100%" height="450px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </Box>
         </Box>

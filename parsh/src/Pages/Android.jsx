@@ -15,7 +15,7 @@ function Android(){
     return(
         <Box>
             <Box>
-                <Image src="http://paarshinfotech.com/assets/img/android-app-development.jpg"/>
+                <Image src="/android.jpg"/>
             </Box>
             <Box w="90%" m="auto" display={["","","","flex","flex","flex"]} mt={["25px","35px","40px","50px","60px","60px"]}>
                 <Box textAlign="start" fontFamily="sans-serif" fontSize={["11px","12px","13px","14px","15px","15px"]} w={["","","","50%","50%","50%"]}>
@@ -25,7 +25,7 @@ function Android(){
                     <Text mt={["5px","6px","8px","8px","20px","10px"]}>We care for your business. So we provide proficient android developers and thought-provoking designers. They have more than +5 years of experience in android app development services.</Text>
                 </Box>
                 <Box m="auto" w={["","","","50%","50%","50%"]}>
-                    <Image src="http://paarshinfotech.com/assets/img/android-app-development-2.jpg" borderRadius="5%"/>
+                    <Image src="/android_pic.PNG" borderRadius="5%"/>
                 </Box>
             </Box>
             <ApplyForm coursetype={"Android App Development"}/>

@@ -15,7 +15,7 @@ function DigitalMarketing(){
     return(
         <Box>
             <Box>
-                <Image src="http://paarshinfotech.com/assets/img/digital-marketing.jpg"/>
+                <Image src="/digital.jpg"/>
             </Box>
             <Box w="90%" m="auto" display={["","","","flex","flex","flex"]} mt={["25px","35px","40px","50px","60px","60px"]}>
                 <Box textAlign="start" fontFamily="sans-serif" fontSize={["11px","12px","13px","14px","15px","15px"]} w={["","","","50%","50%","50%"]}>
@@ -25,7 +25,7 @@ function DigitalMarketing(){
                     <Text mt={["5px","6px","8px","8px","20px","10px"]}>Digital platforms became increasingly incorporated into marketing plans and everyday life. Now, people increasingly use digital devices instead of visiting physical shops.</Text>
                 </Box>
                 <Box m="auto" w={["","","","50%","50%","50%"]}>
-                    <Image src="http://paarshinfotech.com/assets/img/digital-marketing-1.png" borderRadius="5%"/>
+                    <Image src="/digital_pic.PNG" borderRadius="5%"/>
                 </Box>
             </Box>
             <ApplyForm coursetype={"Digital Marketing"}/>

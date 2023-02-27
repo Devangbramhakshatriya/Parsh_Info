@@ -18,8 +18,8 @@ function Navbar() {
 
         <Box display="flex" justifyContent="space-between" bg="#7BAFEB" fontWeight="bold" boxShadow='dark-lg' position="sticky" top="0" zIndex="100">
             <Box display="flex" >
-                <Image w={["20%", "20%", "20%", "20%", "30%", "50%"]} src="http://paarshinfotech.com/assets/img/logo4.png" />
-                <Image w={["60%", "70%", "80%", "80%", "100%", "100%"]} src="http://paarshinfotech.com/assets/img/sppipvt.jpg" />
+                <Image w={["20%", "20%", "20%", "20%", "30%", "50%"]} src="/parsh_symbol1.PNG" />
+                <Image w={["60%", "70%", "80%", "80%", "100%", "100%"]} src="/parsh_symbol2.PNG" />
             </Box>
             {
                 isnavlessthan500 ? <Menu>
@@ -35,7 +35,9 @@ function Navbar() {
                             <RouterLink to="/contact">
                                 <MenuItem>Contact Us</MenuItem>
                             </RouterLink>
-
+                            <RouterLink to="/admin">
+                            <MenuItem>Admin</MenuItem>
+                        </RouterLink>
 
                             <Menu>
                                 <MenuButton as={Text} >
