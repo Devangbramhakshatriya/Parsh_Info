@@ -37,7 +37,14 @@ export default function ContactForm() {
             return {...prev,[name]:value}
         })
     }
-
+    const handlephone=(e)=>{
+        const {name,value}=e.target;
+        if(value>5){
+            setContact((prev)=>{
+                return {...prev,[name]:value}
+            })
+        }
+    }
     const handleSubmit=(e)=>{
         e.preventDefault()
         dispatch(postContact(contact))
@@ -83,13 +90,13 @@ export default function ContactForm() {
                             <Box>
                                 <FormControl id="lastName">
                                     <FormLabel>Phone No</FormLabel>
-                                    <Input type="text" name="phone_no" value={contact.phone_no} onChange={(e)=>handleChange(e)} />
+                                    <Input  type="text" name="phone_no" maxlength='10' value={contact.phone_no}  onChange={(e)=> handlephone(e)} />
                                 </FormControl>
                             </Box>
                         </HStack>
                         <FormControl id="email" isRequired>
                             <FormLabel>Email address</FormLabel>
-                            <Input type="email" name="email" value={contact.email} onChange={(e)=>handleChange(e)}/>
+                            <Input  type="email" name="email" value={contact.email} onChange={(e)=>handleChange(e)}/>
                         </FormControl>
                         <FormControl id="text" isRequired>
                             <FormLabel>Subject</FormLabel>
