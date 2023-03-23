@@ -39,7 +39,7 @@ export default function ContactForm() {
     }
     const handlephone=(e)=>{
         const {name,value}=e.target;
-        if(value>5){
+        if(value>5 ||value==""){
             setContact((prev)=>{
                 return {...prev,[name]:value}
             })
